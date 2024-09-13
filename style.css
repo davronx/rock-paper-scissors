@@ -1,5 +1,5 @@
 body {
-    background-color: ccc;
+    background-color: rgb(204, 102, 204);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,6 +14,7 @@ p {
     margin-bottom: 0.5rem;
 }
 button {
+    font-family: 'Noto Color Emoji';
     border: none;
     font-size: 3rem;
     margin: 0 0.5rem;
@@ -22,3 +23,17 @@ button {
     background-color: grey;
     border-radius: 0.3rem;
 }
+
+#container {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+  
+  #player-side {
+    background-color: rgb(102, 102, 255);
+  }
+  
+  #computer-side {
+    background-color: rgb(255, 102, 102);
+  }
