@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(102, 255, 102);
+  display: flex;
+  vertical-align: top;
+    user-select: none;
+    background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -24,7 +27,7 @@ button {
 }
 
 #container {
-    height: 100vh;
+    aspect-ratio: 16/9;
     display: grid;
     grid-template-columns: repeat(3, 1fr)
   }
