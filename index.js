@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll('button');
 const resultEl = document.querySelector('#result');
-const playerScoreEl = document.getElementById('player-score');
-const computerScoreEl = document.getElementById('computer-score')
+const playerScoreEl = document.getElementById('player-1-score');
+const computerScoreEl = document.getElementById('player-2-score')
 let playerScore = 0;
 let computerScore = 0;
 
