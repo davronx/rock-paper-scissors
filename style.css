@@ -2,8 +2,6 @@
 
 }
 body {
-  display: flex;
-  vertical-align: top;
     user-select: none;
     background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,5 +24,14 @@ button {
     border-radius: 50%;
     padding: 1.5vw;
     cursor: pointer;
-    background-color: rgb(204, 102, 204);
+    background-color: rgb(81, 255, 0);
+}
+#player-1 {
+  background-color: blue;
+}
+#midscreen {
+  background-color: purple;
+}
+#player-2 {
+  background-color: red;
 }
