@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: rgb(204, 102, 204);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -28,15 +27,19 @@ button {
 }
 
 #container {
-    height: 75vh;
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(3, 1fr)
   }
   
-  #player-side {
+  #player-1 {
     background-color: rgb(102, 102, 255);
   }
+
+  #midscreen {
+    background-color: rgb(255, 102, 255);
+  }
   
-  #computer-side {
+  #player-2 {
     background-color: rgb(255, 102, 102);
   }

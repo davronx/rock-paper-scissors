@@ -10,21 +10,24 @@
 </head>
 <body>
 <div id="container">
-    <div class="buttons" id="player-side"><p>Your move</p>
+    <div class="buttons" id="player-1"><p>Your move</p>
         <button id="rock">&#x270a;</button>
         <button id="paper">&#x1f590;</button>
         <button id="scissors">&#x270c;</button>
         <button id="lizard">&#x1f90c;</button>
         <button id="spock">&#x1f596;</button>
     </div>
-    <div id="computer-side"><p>Computer move</p>
+    <div id="midscreen">
+        <p id="result">Your turn</p>
+        <p id="scores">
+            Your score: <span id="player-score">0</span>
+            Computer score: <span id="computer-score">0</span>
+        </p>
+    </div>
+    <div id="player-2"><p>Computer move</p>
 
     </div>
 </div>
-    <p id="result">Your turn</p>
-    <p id="scores">
-        Your score: <span id="player-score">0</span>
-        Computer score: <span id="computer-score">0</span>
-    </p>
+
 </body>
 </html>
