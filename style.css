@@ -1,37 +1,15 @@
-@media (aspect-ratio: 16/9) {
-
+:root {
+color-scheme: light dark;
 }
 body {
+    font-size: 4vw;
     user-select: none;
-    background-color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
-}
-h1 {
-    font-size: 1vw;
-    padding: 1vw;
-}
-p {
-    font-size: 2vw;
-    margin-bottom: 2vw;
 }
 button {
     font-family: 'Noto Color Emoji';
-    font-size: 3vw;
-    border: none;
+    font-size: 10vw;
     border-radius: 50%;
-    padding: 1.5vw;
+    padding: 2vw;
     cursor: pointer;
-    background-color: rgb(81, 255, 0);
-}
-#player-1 {
-  background-color: blue;
-}
-#midscreen {
-  background-color: purple;
-}
-#player-2 {
-  background-color: red;
 }
