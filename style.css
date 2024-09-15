@@ -2,13 +2,14 @@
 color-scheme: light dark;
 }
 body {
+    font-family: 'Noto Color Emoji';
     font-size: 4vw;
     user-select: none;
     text-align: center;
 }
 button {
     font-family: 'Noto Color Emoji';
-    font-size: 10vw;
+    font-size: 8vw;
     border-radius: 50%;
     padding: 2vw;
     cursor: pointer;
