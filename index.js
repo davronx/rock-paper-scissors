@@ -57,3 +57,14 @@ function playRound(playerSelection, computerSelection) {
             return `You lose! (${computerSelection} ${action} ${playerSelection})`;
     }
 }
+
+const themeSelect = document.getElementById('theme-select');
+const themes = document.querySelectorAll('.theme');
+
+themeSelect.addEventListener('change', () => {
+    const selectedTheme = themeSelect.value;
+    
+    themes.forEach(theme => theme.style.display = 'none');
+    
+    document.getElementById(`${selectedTheme}-theme`).style.display = 'block';
+});

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors</title>
+    <title>RPS</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1f93c</text></svg>">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 
@@ -13,13 +14,35 @@
         &#x1f464; <span id="player-1-score">0</span></br>
         &#x1f916; <span id="player-2-score">0</span>
     </p>
-    <div> 
+    <div id="hand-theme" class="theme">
         <button id="rock">&#x270a;</button>
         <button id="paper">&#x1f590;</button>
         <button id="scissors">&#x270c;</button>
-        <button id="spock">&#x1f596;</button>       
+        <button id="spock">&#x1f596;</button>
         <button id="lizard">&#x1f90c;</button>
     </div>
+
+    <div id="literal-theme" class="theme" style="display:none;">
+        <button id="rock">&#x1faa8;</button>
+        <button id="paper">&#x1f4c3;</button>
+        <button id="scissors">&#x2702;</button>
+        <button id="spock">&#x1f9dd;</button>
+        <button id="lizard">&#x1f98e;</button>
+    </div>
+
+    <div id="character-theme" class="theme" style="display:none;">
+        <button id="rock"><img src="./images/rock.webp" alt="Rock"></button>
+        <button id="paper"><img src="./images/paper.webp" alt="Paper"></button>
+        <button id="scissors"><img src="./images/scissors.webp" alt="Scissors"></button>
+        <button id="spock"><img src="./images/spock.webp" alt="Spock"></button>
+        <button id="lizard"><img src="./images/lizard.webp" alt="Lizard"></button>
+    </div>
         <p id="result"></p>
+    <label for="theme-select"></label>
+    <select id="theme-select">
+            <option value="hand">Hand</option>
+            <option value="literal">Literal</option>
+            <option value="character">Character</option>
+    </select>
 </body>
 </html>

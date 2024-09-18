@@ -1,5 +1,5 @@
 :root {
-color-scheme: light dark;
+    color-scheme: light dark;
 }
 body {
     font-family: 'Noto Color Emoji';
@@ -7,10 +7,44 @@ body {
     user-select: none;
     text-align: center;
 }
+
 button {
+    border-radius: 25%;
     font-family: 'Noto Color Emoji';
     font-size: 8vw;
-    border-radius: 50%;
     padding: 2vw;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 15vw;
+    height: 15vw;
+}
+
+#character-theme button {
+    font-size: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+#character-theme button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+}
+
+#theme-select {
+    text-indent: -65%;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    padding: 0vw 1vw;
     cursor: pointer;
 }
