@@ -9,7 +9,7 @@ body, html {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: lightblue;
+    background-color: tan;
 }
 
 #main-container {
@@ -63,7 +63,7 @@ button {
 }
 
 .mode-tog {
-    background-color: black;
+    background-color: #424242;
     position: absolute;
     right: 50px;
     top: 50px;
@@ -76,7 +76,7 @@ button {
     }
     
     .mode-tog.active {
-    background-color: white;
+    background-color: hsl(0, 0%, 74%);
     transition: 1000ms;
     }
     
@@ -101,7 +101,7 @@ button {
     width: 250vw;
     height: 250vw;
     border-radius: 50%;
-    background-color:#161616;
+    background-color:#3b3b3b;
     transition: 1000ms ease-in-out;
     display: flex;
     flex: 0 0 auto;
@@ -122,9 +122,9 @@ button {
     transform: translateX(-50%);
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1000px) {
     .dark-mode {
-    width: 250vh;
-    height: 250vh;
+    width: 1000vh;
+    height: 1000vh;
     }
     }
