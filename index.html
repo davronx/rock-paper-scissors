@@ -12,29 +12,49 @@
 <body>
     <div id="main-container">
     <p>
-        &#x1f464; <span id="player-1-score">0</span></br>
+        &#x1f480; <span id="player-1-score">0</span></br>
         &#x1f916; <span id="player-2-score">0</span>
     </p>
-    <div id="hand-theme" class="theme">
-        <button id="rock">&#x270a;</button>
-        <button id="paper">&#x1f590;</button>
-        <button id="scissors">&#x270c;</button>
-        <button id="spock">&#x1f596;</button>
-        <button id="lizard">&#x1f90c;</button>
+    <div id="playful" class="theme">
+        <button class="rock">&#x270a;</button>
+        <button class="paper">&#x1f590;</button>
+        <button class="scissors">&#x270c;</button>
+        <button class="spock">&#x1f596;</button>
+        <button class="lizard">&#x1f90c;</button>
     </div>
 
-    <div id="character-theme" class="theme" style="display:none;">
-        <button id="rock"><img src="./images/rock.webp" alt="Rock"></button>
-        <button id="paper"><img src="./images/paper.webp" alt="Paper"></button>
-        <button id="scissors"><img src="./images/scissors.webp" alt="Scissors"></button>
-        <button id="spock"><img src="./images/spock.webp" alt="Spock"></button>
-        <button id="lizard"><img src="./images/lizard.webp" alt="Lizard"></button>
+    <div id="comical" class="theme" style="display:none;">
+        <button class="rock"><img src="./images/rock.webp" alt="Rock"></button>
+        <button class="paper"><img src="./images/paper.webp" alt="Paper"></button>
+        <button class="scissors"><img src="./images/scissors.webp" alt="Scissors"></button>
+        <button class="spock"><img src="./images/spock.webp" alt="Spock"></button>
+        <button class="lizard"><img src="./images/lizard.webp" alt="Lizard"></button>
     </div>
+
+    <div id="spooky" class="theme" style="display:none;">
+        <button class="rock">
+            <video src="./images/rock.webm"></video>
+        </button>
+        <button class="paper">
+            <video src="./images/paper.webm"></video>
+        </button>
+        <button class="scissors">
+            <video src="./images/scissors.webm"></video>
+        </button>
+        <button class="spock">
+            <video src="./images/spock.webm"></video>
+        </button>
+        <button class="lizard">
+            <video src="./images/lizard.webm"></video>
+        </button>
+    </div>
+
         <p id="result"></p>
     <label for="theme-select"></label>
     <select id="theme-select">
-            <option value="hand">Hand</option>
-            <option value="character">Character</option>
+            <option value="playful">Playful</option>
+            <option value="comical">Comical</option>
+            <option value="spooky">Spooky</option>
     </select>
 </div>
     <div class="mode-tog"></div>

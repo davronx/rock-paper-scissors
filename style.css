@@ -2,7 +2,6 @@
     color-scheme: light dark;
 }
 body, html {
-    font-family: 'Noto Color Emoji';
     font-size: 4vw;
     user-select: none;
     text-align: center;
@@ -29,14 +28,14 @@ button {
     height: 15vw;
 }
 
-#character-theme button {
+#comical button {
     font-size: 0;
     padding: 0;
     position: relative;
     z-index: 2;
 }
 
-#character-theme button img {
+#comical button img {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,6 +59,13 @@ button {
     width: 20px;
     height: 20px;
     z-index: 2;
+}
+
+#spooky button video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 .mode-tog {

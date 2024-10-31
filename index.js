@@ -1,4 +1,5 @@
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('.theme button');
+const videoButtons = document.querySelectorAll('#spooky button');
 const resultEl = document.querySelector('#result');
 const playerScoreEl = document.getElementById('player-1-score');
 const computerScoreEl = document.getElementById('player-2-score')
@@ -13,9 +14,10 @@ const winningConditions = {
     spock: ['scissors', 'rock']
 };
 
+
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        const result = playRound(button.id, computerChoice())
+        const result = playRound(button.classList[0], computerChoice());
         resultEl.textContent = result;
     });
 });
@@ -65,13 +67,23 @@ themeSelect.addEventListener('change', () => {
     const selectedTheme = themeSelect.value;
     
     themes.forEach(theme => theme.style.display = 'none');
-    
-    document.getElementById(`${selectedTheme}-theme`).style.display = 'block';
+    document.getElementById(selectedTheme).style.display = 'block';
+});
+
+videoButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const video = button.querySelector('video');
+        if (video) {
+            video.currentTime = 0; 
+            video.play();
+        }
+    });
 });
 
 let modeToggle = document.querySelector('.mode-tog');
-let darkMode = document. querySelector( ' .dark-mode' );
-modeToggle. addEventListener('click', () =>{
-darkMode. classList. toggle( 'active' ) ;
-modeToggle. classList. toggle( 'active' );
-})
+let darkMode = document.querySelector('.dark-mode');
+
+modeToggle.addEventListener('click', () => {
+    darkMode.classList.toggle('active');
+    modeToggle.classList.toggle('active');
+});
